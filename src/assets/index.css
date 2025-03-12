@@ -1,0 +1,91 @@
+/* 🌟 Styles globaux de Kyami */
+body {
+  background-color: #ffffff; /* Fond sombre pour un rendu premium */
+  color: #000000; /* Texte blanc pour contraster */
+  font-family: 'Poppins', sans-serif; /* Police élégante */
+}
+
+/* 🌟 Titres dorés */
+h1, h2, h3 {
+  color: #D4AF37; /* Doré */
+  font-weight: bold;
+}
+
+/* 🌟 Corrige la couleur du texte dans les inputs */
+input, textarea {
+  color: black !important; /* Texte en noir pour être visible sur fond blanc */
+  background-color: white !important; /* Fond bien blanc */
+  border: 2px solid #D4AF37 !important; /* Bordure dorée élégante */
+}
+
+input::placeholder, textarea::placeholder {
+  color: #888 !important; /* Placeholder en gris clair */
+}
+
+input:focus, textarea:focus {
+  border-color: #b8860b !important; /* Bordure dorée plus foncée au focus */
+  box-shadow: 0 0 5px rgba(212, 175, 55, 0.7); /* Effet glow doré au focus */
+}
+
+
+/* 🌟 Navbar */
+.navbar {
+  background-color: #ffffff !important;
+}
+
+.navbar-brand {
+  color: #D4AF37 !important;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #D4AF37 !important;
+  font-size: 1.2rem;
+}
+
+.nav-link:hover {
+  color: #D4AF37 !important;
+}
+
+
+/* 🌟 Footer */
+footer {
+  background-color: #1C1C1C;
+  color: #D4AF37;
+  padding: 15px 0;
+  text-align: center;
+}
+
+/* 🌟 Boutons stylés */
+.btn-kyami {
+  background: linear-gradient(45deg, #D4AF37, #b8860b);
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-kyami:hover {
+  background: linear-gradient(45deg, #b8860b, #D4AF37);
+  transform: scale(1.05);
+}
+
+
+/* CONTAACT*/
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.alert {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
