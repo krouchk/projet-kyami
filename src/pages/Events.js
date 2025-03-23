@@ -1,5 +1,5 @@
 import React from "react";
-import EventCard from "../components/EventCard";
+import EventCard from "../components/Events/EventCard";
 
 function Events() {
   // Liste d'événements avec des données fictives
