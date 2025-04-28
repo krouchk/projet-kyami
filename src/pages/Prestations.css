@@ -1,0 +1,31 @@
+/* Prestations.css */
+
+.text-gold {
+    color: #d4af37;
+  }
+  
+  .btn-gold {
+    background-color: #d4af37;
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-gold:hover {
+    background-color: #b8972d;
+    color: white;
+  }
+  
+  .prestation-card {
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+  }
+  
+  .prestation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  

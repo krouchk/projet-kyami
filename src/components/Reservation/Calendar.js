@@ -30,6 +30,18 @@ const CalendarPage = () => {
           ...event,
           start: new Date(event.start),
           end: new Date(event.end),
+          title:
+            event.status === "confirmée"
+              ? `✅ ${event.prestation}`
+              : event.status === "en attente"
+              ? `🕒 ${event.prestation} (en attente)`
+              : `❌ Refusé`,
+          color:
+            event.status === "confirmée"
+              ? "green"
+              : event.status === "en attente"
+              ? "orange"
+              : "red",
         }));
         setEvents(formattedEvents);
       })
@@ -72,6 +84,12 @@ const CalendarPage = () => {
         style={{ height: 600 }}
         views={["month", "week", "day", "agenda"]}
         toolbar={true}
+        eventPropGetter={(event) => ({
+          style: {
+            backgroundColor: event.color,
+            color: "white",
+          },
+        })}
         messages={{
           today: "Aujourd'hui",
           previous: "Précédent",
